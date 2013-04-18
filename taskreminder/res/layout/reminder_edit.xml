@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView 
+	xmlns:android="http://schemas.android.com/apk/res/android" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	<LinearLayout	
+		android:orientation="vertical" 
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/title" />
+		<EditText android:id="@+id/title" 
+		    android:hint="@string/hint_str"
+		  	android:layout_width="fill_parent"
+			android:layout_height="wrap_content" 
+			/>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/body" />
+		<EditText android:id="@+id/body" android:layout_width="fill_parent"
+		    android:hint="@string/hint_str"
+			android:layout_height="wrap_content"
+			android:minLines="5"
+			android:scrollbars="vertical" 
+			android:gravity="top" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/date" />
+		<Button 
+			android:id="@+id/reminder_date"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			/>
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/time" />
+		<Button 
+			android:id="@+id/reminder_time"
+			android:layout_height="wrap_content"
+			android:layout_width="wrap_content"
+			/>
+		<RadioGroup
+		    android:id="@+id/radiogroup"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:orientation="vertical">
+		    
+		<RadioButton
+		    android:id="@+id/radioButton1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/fixed_date" />
+
+		<RadioButton
+		    android:id="@+id/radioButton2"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/unbreakable" />
+
+		<RadioButton
+		    android:id="@+id/radioButton3"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:text="@string/breakable" />
+		<TextView android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:text="@string/estimated_time_to_complete" />
+		<EditText
+		    android:id="@+id/rtime"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:inputType="numberDecimal" >
+		    <requestFocus />
+		</EditText>
+
+		</RadioGroup>
+
+		<Button android:id="@+id/confirm" 
+		  android:text="@string/confirm"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" />
+	</LinearLayout>
+</ScrollView>
